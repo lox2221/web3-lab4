@@ -27,39 +27,36 @@
                 </ul>
             </aside>
             <article>
-                <h2 id="universityPhotoHeader">Фото університету</h2>
-                <div class="gallery-container">
-		        <div>
-                    <img src='https://nung.edu.ua/sites/default/files/2023-05/photo_2023-05-03_10-11-44.jpg' />
-                </div>
-                <div>
-                    <img src='https://nung.edu.ua/sites/default/files/2023-05/photo_2023-05-03_10-11-44.jpg' />
-                </div>
-                <div>
-                    <img src='https://nung.edu.ua/sites/default/files/2023-05/photo_2023-05-03_10-11-44.jpg' />
-                </div>
-                 <div>
-                    <img src='https://nung.edu.ua/sites/default/files/2023-05/photo_2023-05-03_10-11-44.jpg' />
-                </div>
-                <div>
-                    <img src='https://nung.edu.ua/sites/default/files/2023-05/photo_2023-05-03_10-11-44.jpg' />
-                </div>
-                <div>
-                    <img src='https://nung.edu.ua/sites/default/files/2023-05/photo_2023-05-03_10-11-44.jpg' />
-                </div>
-                <div>
-                    <img src='https://nung.edu.ua/sites/default/files/2023-05/photo_2023-05-03_10-11-44.jpg' />
-                </div>
-                <div>
-                    <img src='https://nung.edu.ua/sites/default/files/2023-05/photo_2023-05-03_10-11-44.jpg' />
-                </div>
-                <div>
-                    <img src='https://nung.edu.ua/sites/default/files/2023-05/photo_2023-05-03_10-11-44.jpg' />
-                </div>
-                <div>
-                    <img src='https://nung.edu.ua/sites/default/files/2023-05/photo_2023-05-03_10-11-44.jpg' />
-                </div>
-            </div>
+                <h1>Донесення про помилку</h1>
+                <form action="/submit-error" method="post" enctype="multipart/form-data">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+                
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                
+                    <label for="url">URL сторінки:</label>
+                    <input type="url" id="url" name="url" placeholder="Посилання на сторінку" required>
+                
+                    <label for="errorType">Тип помилки:</label>
+                    <select id="errorType" name="errorType" required>
+                        <option value="">Оберіть тип помилки</option>
+                        <option value="technical">Технічна</option>
+                        <option value="content">Зміст</option>
+                        <option value="design">Дизайн</option>
+                        <option value="other">Інша</option>
+                    </select>
+                
+                    <label for="description">Опис:</label>
+                    <textarea id="description" name="description" rows="5" placeholder="Опишіть помилку детальніше" required></textarea>
+                
+                    <label>
+                        <input type="checkbox" id="screenshot" name="screenshot">
+                        Прикріпити знімок екрана
+                    </label>
+                
+                    <button type="submit">Відправити</button>
+                </form>
             </article>
             <aside>
                 <ul>
@@ -70,7 +67,7 @@
                 </ul>
             </aside>
         </main>
-        <footer>
+        <footer div class="down-footer">
             <div class="social-info">
                 <ul>
                     <li><a class="social-link" href="https://www.facebook.com/IFNTUOG/?locale=uk_UA"><img src="img/facebook.png"/></a></li>

@@ -142,3 +142,100 @@ footer > div{
 .copyright-mark{
     text-align: center;
 }   
+@media only screen and (max-width: 768px){
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li{
+        margin-top:30px;
+    }
+    header{
+        padding-bottom:20px;
+    }
+    main{
+        flex-direction: column;
+        min-height: auto;
+    }
+    header h1{
+        margin-top:0px;
+    }
+    .rightsidebar{
+        display:none;
+    }
+    #usefulLinks{
+        order:2;
+    }
+    article{
+        order:1;
+        padding:0px 20px;
+
+    }
+    .links-align{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-info{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .contact-info div{
+     margin: 2px;
+     
+    }
+    .contact-info div img{
+        margin-right: 10px;
+    }
+    .social-info{
+        margin-right: 20px;
+    }
+    .gallery-container div{
+        max-width: 50%;
+    }
+}
+@media only screen and (max-width:500px){
+    .contact-info{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .gallery-container div{
+        max-width: 100%;
+    }
+  
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
